@@ -9,32 +9,24 @@
 
 <body>
     <script>
-        a = 10; b = 20;
-        const add = (a, b) => {
-            document.write("a+b = ",a + b);
-            document.write("<br>")
-        }
-        const sub = (a, b) => {
-            document.write("a-b = ",a - b);
-            document.write("<br>")
-        }
-        const mul = (a, b) => {
-            document.write("a*b = ",a * b);
-            document.write("<br>")
-        }
-        const div = (a, b) => {
-            document.write("a/b = ",a / b);
-            document.write("<br>")
-        }
-        const mod = (a, b) => {
-            document.write("a%b = ",a % b);
-        }
+ // Step 1: Create an array of my 5 favorite movies  
+    let favoriteMovies = ['Inception', 'The Shawshank Redemption', 'The Godfather', 'Pulp Fiction', 'Forrest Gump'];
+        console.log(favoriteMovies);
+    // Step 2: Add a movie to the end of the array  
+    favoriteMovies.push('The Dark Knight');
+    console.log(favoriteMovies);
+    // Step 3: Remove the first movie from the array  
+    favoriteMovies.shift();
+    console.log(favoriteMovies);
+    // Step 4: Insert two movies at the second position  
+    favoriteMovies.splice(1, 0, 'The Matrix', 'Interstellar');
+    console.log(favoriteMovies);
+    // Step 5: Replace the last movie with another movie  
+    favoriteMovies[favoriteMovies.length - 1] = 'The Lord of the Rings';
+    console.log(favoriteMovies);
+    // Print the final array  
 
-        add(a, b);
-        sub(a, b);
-        div(a, b);
-        mul(a, b);
-        mod(a, b);
+
     </script>
 </body>
 
